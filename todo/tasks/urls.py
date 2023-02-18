@@ -4,6 +4,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-	path('helloworld/', views.helloWorld)
+	path('helloworld/', views.helloWorld),
+	path('', views.taskList, name='task-list'),
 ]
