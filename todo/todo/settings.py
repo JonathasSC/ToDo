@@ -54,7 +54,7 @@ ROOT_URLCONF = 'todo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r'C:\Users\PC\Documents\repositórios\projeto-ToDo\todo\tasks\templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
