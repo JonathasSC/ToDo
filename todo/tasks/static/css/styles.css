@@ -28,6 +28,10 @@
 
 /* Botão de adicionar */
 
+#add-task {
+	text-decoration: none;
+}
+
 .add-div {
 	background-color: #5C82F2;
 	cursor: pointer;
@@ -117,3 +121,4 @@ footer p {
 	top: 50%;
 	position: relative;
 }
+
