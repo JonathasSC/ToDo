@@ -51,10 +51,22 @@
 
 /* Search */
 
+.form-control {
+	border-right: none;
+	border-radius: 10px 0px 0px 10px ;
+}
+
 .add-search {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+}
+
+#search-icon {
+	padding: 10px;
+	border: 1px solid rgb(218, 218, 218);
+	border-radius: 0px 10px 10px 0px ;
+	border-left: none;
 }
 
 #search-bar {
@@ -122,3 +134,24 @@ footer p {
 	position: relative;
 }
 
+/* Messages */
+
+ul.messages {
+	padding: 0;
+}
+
+ul.messages li {
+	list-style: none ;
+}
+
+/* Paginação */
+
+.pagination {
+	margin-bottom: 20px ;
+}
+
+.step-links {
+	position: relative;
+	margin-left: auto ;
+	margin-right: auto ;
+}
