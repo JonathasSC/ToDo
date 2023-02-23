@@ -5,7 +5,7 @@
 /* NavBar */
 
 .navbar {
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #dadada;
 	margin-bottom: 20px;
 	padding-right: 10px;
 }
@@ -25,6 +25,19 @@
 	color: #333;
 	letter-spacing: 1px;
 }
+
+.nav-item {
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+
+}
+
+.nav-link:hover {
+	background-color: #dbdbdb;
+	border-radius: 5px;
+}
+
 
 /* Botão de adicionar */
 
@@ -119,21 +132,6 @@
 	color: #0DA68A;
 }
 
-/* Footer */
-
-footer {
-	background-color: #333;
-	height: 300px;
-	border-top: 2px solid #202020;
-}
-
-footer p { 
-	color: #f5f5f5;
-	text-align: center;
-	top: 50%;
-	position: relative;
-}
-
 /* Messages */
 
 ul.messages {
@@ -154,4 +152,63 @@ ul.messages li {
 	position: relative;
 	margin-left: auto ;
 	margin-right: auto ;
+}
+
+/* Footer */
+
+footer {
+	background-color: #333;
+	height: 300px;
+	border-top: 2px solid #111;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	height: 200px;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	gap: 10px;
+}
+
+footer p { 
+	max-width: 600px;
+	color: #a0a0a0;
+	text-align: center;
+	top: 30%;
+	position: relative;
+}
+
+h3 {
+	color: #f5f5f5;
+	text-align: center;
+	top: 50%;
+}
+
+.sociais {
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+
+#gmail,
+#linkedin,
+#github {
+	font-size: 14pt;
+	color: white;
+}
+
+.fa:hover ,
+#gmail:hover ,
+#linkedin:hover ,
+#github:hover {
+	color: gray;
+}
+
+.offset-1 {
+	padding-top: 30px;
 }

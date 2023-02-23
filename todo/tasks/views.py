@@ -11,7 +11,7 @@ def helloWorld(request):
 def taskList(request):
 	tasks_list = Task.objects.all().order_by('-created_at') #Pegando todos os objetos Tasks do banco de dados
 	
-	paginator = Paginator(tasks_list,3)
+	paginator = Paginator(tasks_list,6)
 	page = request.GET.get('page')
 	tasks = paginator.get_page(page)
 
