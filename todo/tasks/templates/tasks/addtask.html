@@ -4,11 +4,20 @@
 
 {% block content %}
 <div class="offset-1 col-10 list-div">
-	<h1>Adicione a sua nova tarefa:</h1>
-	<form method="POST">
-		{% csrf_token %}
-		{{ form.as_p }}
-		<input type="submit" class="btn btn-success" value="Criar tarefa"> 
-	</form>
+	<div class="form-area-image">
+		<form method="POST" class="newtask-form">
+			{% csrf_token %}
+			<h4 class="title-new-task">Adicione a sua nova tarefa:</h4>
+			
+			<input type="hidden" name="csrfmiddlewaretoken" value="OHkSVCU1kXtHGfmD13F0sqeaZLe3kJRYosP7jVeFgS9FKEl3EXOJwuXKzbnFTSwB">
+			
+			<input placeholder="Titulo" type="text" name="title" maxlength="255" required="" id="id_title">		
+
+			<textarea placeholder="Descrição" name="description" cols="40" rows="10" required="" id="id_description"></textarea>
+
+			<input type="submit" class="btn btn-success" value="Criar tarefa"> 
+		</form>
+		<img src="https://cdn4.meistertask.com/assets/svgs/lead-magnet-1-d7e395a5bcdadcc49d4d2585bc9c35cee4a109c8eb9c6621601d09254d5e1d1f.svg"> 
+	</div>
 </div>
 {% endblock %}
