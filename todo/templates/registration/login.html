@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Entrar em To Do{% endblock %}
+
+{% block content %}
+<div class="offset-1 col-10 login-div">
+	<form method="POST" class="login-form">
+		{% csrf_token %}
+		<h4 class="title-new-task">Bem-vindo!</h4>
+		<div class="labels">
+			<label>Usuário</label>
+			<input type="text" id="id_user" name="user">
+		</div>
+		<div class="labels">
+			<label>Senha</label>
+			<input type="password" id="id_password">
+		</div>
+
+		<input id="id_submit-login" type="submit" class="btn btn-success" value="Login">
+		
+	</form>
+</div>
+{% endblock %}
