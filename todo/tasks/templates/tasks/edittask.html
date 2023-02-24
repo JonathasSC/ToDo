@@ -1,14 +1,23 @@
 {% extends 'base.html' %}
 
-{% block title %}Editando '{{task.title}}' {% endblock %}
+{% block title %}Adicione uma tarefa{% endblock %}
 
 {% block content %}
 <div class="offset-1 col-10 list-div">
-	<h1>Editando '{{task.title}}'</h1>
-	<form method="POST">
-		{% csrf_token %}
-		{{ form.as_p }}
-		<input type="submit" class="btn btn-success" value="Editar Tarefa"> 
-	</form>
+	<div class="form-area-image">
+		<form method="POST" class="newtask-form">
+			{% csrf_token %}
+			<h4 class="title-new-task">Editando '{{task.title}}'</h4>
+			
+			<input type="hidden" name="csrfmiddlewaretoken" value="OHkSVCU1kXtHGfmD13F0sqeaZLe3kJRYosP7jVeFgS9FKEl3EXOJwuXKzbnFTSwB">
+			
+			<input placeholder="Titulo" type="text" name="title" maxlength="255" required="" id="id_title">		
+
+			<textarea placeholder="Descrição" name="description" cols="40" rows="10" required="" id="id_description"></textarea>
+
+			<input type="submit" class="btn btn-success" value="Editar tarefa"> 
+		</form>
+		<img class="illustration" src="https://img.freepik.com/free-vector/checklist-concept-illustration_114360-339.jpg?w=826&t=st=1677261515~exp=1677262115~hmac=c47d332506082d18441e286b93a77081b91c9b59354beda18db53e33ae41d2a8"> 
+	</div>
 </div>
 {% endblock %}
