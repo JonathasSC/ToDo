@@ -2,22 +2,47 @@
 
 {% block title %}Entrar em To Do{% endblock %}
 
-{% block content %}
-<div class="offset-1 col-10 login-div">
-	<form method="POST" class="login-form">
-		{% csrf_token %}
-		<h4 class="title-new-task">Bem-vindo!</h4>
-		<div class="labels">
-			<label>Usuário</label>
-			<input type="text" id="id_user" name="user">
-		</div>
-		<div class="labels">
-			<label>Senha</label>
-			<input type="password" id="id_password">
-		</div>
+{% load crispy_forms_tags %}
 
-		<input id="id_submit-login" type="submit" class="btn btn-success" value="Login">
-		
-	</form>
+{% block content %}
+<div class="row">
+	<div class="card auth-card">
+		<h4 class="card-title text-center">Bem-vindo!</h4>
+		<form method="POST" class="form-structure">
+			{% csrf_token %}
+
+			<input type="hidden" name="next" value="{{ next }}">
+
+			<div id="div_id_username" class="mb-3">
+
+				<label for="id_username" class="form-label requiredField">Username
+					<span class="asteriskField">*</span>
+				</label>
+
+				<input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" class="textinput form-control is-invalid" required="" id="id_username">
+
+				<p id="error_1_id_username" class="invalid-feedback">
+					<strong>This field is required.</strong>
+				</p>
+			
+			</div>
+			
+			<div id="div_id_password" class="mb-3">
+
+				<label for="id_password" class="form-label requiredField">Password
+					<span class="asteriskField">*</span>
+				</label>
+
+				<input type="password" name="password" autocomplete="current-password" class="passwordinput form-control is-invalid" required="" id="id_password">
+
+				<p id="error_1_id_password" class="invalid-feedback">
+					<strong>This field is required.</strong>
+				</p>
+			</div>
+
+			<button type="submit" class="btn btn-primary btn-block">Entrar</button>
+		</form>
+	</div>
 </div>
 {% endblock %}
+

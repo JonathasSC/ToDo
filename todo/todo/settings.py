@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'about',
     'tasks',
     'users',
+	'crispy_forms',
+	'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -122,7 +124,11 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 # Default primary key field type
-# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field\
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 

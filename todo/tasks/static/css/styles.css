@@ -82,7 +82,7 @@
     display: inline-block;
 }
 
-.form-control {
+#search {
 	border-right: none;
 	width: 300px;
 	border-radius: 10px 0px 0px 10px ;
@@ -259,30 +259,40 @@ h3 {
 
 /* Login */
 
-.labels {
+.row {
 	display: flex;
-	flex-direction: column;
-}
-
-.login-form {
-	display: flex;
-	flex-direction: column;
-	Align-items: center;
-	width: 250px;
-	border: 1px solid rgb(216, 216, 216);
-	padding: 20px ;
-	gap: 15px;
-}
-
-.login-div {
-	height: 50vh;
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	width: 100vw;
+	padding-top: 10vh;
 }
 
-#id_submit-login {
-	margin-top: 10px;
-	padding-left: 75px;
-	padding-right: 75px;
+.form-structure {
+	display: flex;
+	flex-direction: column;
+}
+
+.auth-card {
+	-webkit-box-shadow: 0px 0px 41px -19px rgba(0,0,0,0.55);
+	-moz-box-shadow: 0px 0px 41px -19px rgba(0,0,0,0.55);
+	box-shadow: 0px 0px 41px -19px rgba(0,0,0,0.55);
+	border-radius: 20px;
+	max-width: 300px;
+	padding: 20px;
+	border: none; 
+}
+
+.btn-primary {
+	background-color: #00aaff;
+}
+
+.btn-primary:hover {
+	background-color: #008acf;
+}
+
+#error_1_id_username {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
 }
