@@ -2,6 +2,7 @@
     padding: 0;
 }
 
+
 /* NavBar */
 
 .navbar {
@@ -150,60 +151,6 @@
 
 /* Footer */
 
-footer {
-	background-color: #333;
-	height: 300px;
-	border-top: 2px solid #111;
-	position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-	height: 200px;
-}
-
-.footer-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 30px;
-	gap: 10px;
-}
-
-footer p { 
-	max-width: 600px;
-	color: #a0a0a0;
-	text-align: center;
-	top: 30%;
-	position: relative;
-}
-
-h3 {
-	color: #f5f5f5;
-	text-align: center;
-	top: 50%;
-}
-
-.sociais {
-	display: flex;
-	flex-direction: row;
-	gap: 40px;
-}
-
-#gmail,
-#linkedin,
-#github {
-	font-size: 14pt;
-	color: white;
-}
-
-.fa:hover ,
-#gmail:hover ,
-#linkedin:hover ,
-#github:hover {
-	color: gray;
-}
-
-
 /* adicionar task */
 
 .offset-1 {
@@ -264,8 +211,8 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
-	width: 100vw;
-	padding-top: 10vh;
+	width: 100%;
+	padding-top: 50px;
 }
 
 .form-structure {
@@ -283,11 +230,12 @@ h3 {
 	border: none; 
 }
 
-.btn-primary {
+.btn {
 	background-color: #00aaff;
+	border: none;
 }
 
-.btn-primary:hover {
+.btn:hover {
 	background-color: #008acf;
 }
 
@@ -295,4 +243,11 @@ h3 {
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
+}
+
+/* Register/Login */
+
+.change-form-p {
+	text-align: center;
+	margin-top: 30px;
 }
