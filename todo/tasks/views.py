@@ -71,3 +71,17 @@ def deleteTask(request, id):
 	messages.info(request, 'Tarefa deletada com sucesso')
 
 	return redirect('/')
+
+@csrf_exempt
+@login_required
+def changeStatus(request, id):
+	task = get_object_or_404(Task, pk=id)
+	
+	if task.done == 'doing':
+		task.done = 'done'
+	else: 
+		task.done = 'doing'
+
+	task.save()
+
+	return redirect('/')

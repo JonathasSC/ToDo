@@ -121,20 +121,57 @@
     border-bottom: 1px dashed #CCC;
 }
 
-.fas.fa-trash {
-    color: #db1e47;
+.task-item.done {
+    background-color: #ccc;
+}
+
+.link-task {
+	padding-left: 12px;
+}
+
+.link-task.done {
+	color: #888888;
+}
+
+.fas.fa-trash,
+.fas.fa-square-pen,
+.fas.fa-circle-check {
     cursor: pointer;
     margin: 5px;
     font-size: 20px;
     float: right;
 }
 
-.fas.fa-edit {
+.fas.fa-circle-check {
+	background-color: white;
+	border-radius: 20px;
+}
+
+.fas.fa-trash {
+	color: #db1e47;
+}
+.fas.fa-trash:hover {
+	color: #b31a3b;
+}
+
+.fas.fa-square-pen {
     color: #00aaff;
-    cursor: pointer;
-    margin: 5px;
-    font-size: 20px;
-    float: right;
+}
+.fas.fa-square-pen:hover {
+    color: #038ed4;
+}
+
+.fas.fa-circle-check {
+	color: #929292;
+}
+.fas.fa-circle-check:hover {
+	color: #727272;
+}
+.done .fas.fa-circle-check {
+	color: #1EC75F;
+}
+.done .fas.fa-circle-check:hover {
+	color: #18a84f;
 }
 
 /* Paginação */
