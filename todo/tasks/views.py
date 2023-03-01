@@ -1,28 +1,35 @@
 from django.shortcuts import render, get_object_or_404, redirect
-
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators	import login_required
 from django.core.paginator import Paginator
 from .models import Task
 from .forms import TaskForm
 from django.contrib import messages #pacotes de mensagens para usuario
+import datetime
 
 @login_required
 @csrf_exempt
 def taskList(request):
 	search = request.GET.get('search') #Search é o nome do input referente ao buscador
+	filter = request.GET.get('filter')
+	taskDoneRecently = Task.objects.filter(done='done', update_at__gt=datetime.datetime.now()-datetime.timedelta(days=30)).count()
+	taskDone = Task.objects.filter(done='done', user=request.user).count()
+	taskDoing = Task.objects.filter(done='doing', user=request.user).count()
 
 	if search: 
 		tasks = Task.objects.filter(title__icontains=search, user=request.user)
 
+	elif filter: 
+		tasks = Task.objects.filter(done=filter, user=request.user)
+
 	else:
 		tasks_list = Task.objects.all().order_by('-created_at').filter(user=request.user) #Pegando todos os objetos Tasks do banco de dados
 		
-		paginator = Paginator(tasks_list,6)
+		paginator = Paginator(tasks_list,7)
 		page = request.GET.get('page')
 		tasks = paginator.get_page(page)
 
-	return render(request, 'tasks/list.html', {'tasks': tasks} )
+	return render(request, 'tasks/list.html', {'tasks':tasks, 'tasksrecently':taskDoneRecently, 'tasksdone':taskDone, 'tasksdoing':taskDoing})
 
 @login_required
 @csrf_exempt
