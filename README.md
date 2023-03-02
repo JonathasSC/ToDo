@@ -27,7 +27,7 @@ Projeto feito com base em paralelo de video aulas durante o curso de django do c
 A algum tempo tenho como objetivo aprender a utilizar Django para desenvolver aplicações web, e esse projeto posso dizer que me fez dar passos maiores para cumprir esse objetivo.
 
 ---
-## Como usar:
+## Como usar?
 
 ### 1. Clone esse repositório;
 
@@ -39,8 +39,6 @@ Para clonar esse repositório na sua maquina, utilize o comando git clone juntam
 
 Após clonar o repositório em sua maquina, abra um terminal na raiz e efetue esse comando para criar um ambiente virtual: 
 ```python -m venv venv-todo```
-
----
 
 Perceba se foi criado uma pasta com o nome venv-todo na raiz, se sim, efetue esse comando para ativar seu ambiente virtual:
 ```./venv-todo/Scripts/Activate```
@@ -57,3 +55,54 @@ Com tudo instalado, execute o projeto no seu computador entrando na pasta "todo"
 ```cd todo```
 
 ```python .\manage.py runserver```
+
+---
+
+## Visualize por aqui
+
+### 1. Tela de login
+
+Logo ao entrar, haverá a tela de login para acessar sua conta, caso não tenha uma, clique em "Clique aqui"
+
+<img src="./readme-assets/1.png" >
+
+---
+
+### 1. Tela de Registro
+
+Após clicar para se registrar, apresentarar um formulário para criação de sua conta utilizando seu nome de usuário e senha.
+
+<img src="./readme-assets/2.png" >
+
+--- 
+
+### Tela principal - Lista de tarefas
+
+Após registrar-se e fazer login, você será direcionado para a tela principal da aplicação, podendo visualizar as tarefas finalizadas nos ultimos 30 dias, todas realizadas e tarefas ainda não feitas.
+
+Além do botão de adicionar tarefa e do mecanismo de filtro para buscar alguma tarefa em especifica.
+
+<img src="./readme-assets/3.png" >
+
+--- 
+
+### Adicionar uma nova tarefa
+
+Ao clicar em adicionar tarefa na tela principal, você é direcionado para uma tela de formulário para criar sua tarefa, basta preenche-lo e clicar em "criar tarefa".
+
+<img src="./readme-assets/4.png" >
+
+--- 
+
+### Manipular tarefa
+
+Voltando para a tela principal, após adicionar uma tarefa, percebemos que ela aparece logo abaixo. 
+
+A tarefa possui 3 botões na mesma linha da tarefa na outra extremidade, esses são:
+
+mudar o status da tarefa para "concluido":
+<img src="./readme-assets/6.gif" >
+para editar a tarefa:
+<img src="./readme-assets/7.gif" >
+deletar a tarefa:
+<img src="./readme-assets/8.gif" >
