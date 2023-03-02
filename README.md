@@ -10,13 +10,12 @@
 
 ### Tecnolgias Utilizadas:
 
-![python](https://img.shields.io/badge/PYTHON-29699c?&logo=python&logoColor=ffe25c&style=flat&logoWidth=30) ![javascript](https://img.shields.io/badge/JAVASCRIPT-323330?&logo=javascript&logoColor=#3f7fb2&style=flat&logoWidth=30) ![html5](https://img.shields.io/badge/HTML-e34c26?&logo=html5&logoColor=ffffff&style=flat&logoWidth=30) ![css3](https://img.shields.io/badge/CSS3-2965f1?&logo=css3&logoColor=ffffff&style=flat&logoWidth=30)
+![python](https://img.shields.io/badge/PYTHON-29699c?&logo=python&logoColor=ffe25c&style=flat&logoWidth=30) ![javascript](https://img.shields.io/badge/JAVASCRIPT-323330?&logo=javascript&logoColor=#3f7fb2&style=flat&logoWidth=30) ![html5](https://img.shields.io/badge/HTML-e34c26?&logo=html5&logoColor=ffffff&style=flat&logoWidth=30) ![css3](https://img.shields.io/badge/CSS3-2965f1?&logo=css3&logoColor=ffffff&style=flat&logoWidth=30) ![bootstrap](https://img.shields.io/badge/BOOTSTRAP-8b0bfc?&logo=bootstrap&logoColor=ffffff&style=flat&logoWidth=30) ![sqlite](https://img.shields.io/badge/SQLITE-79c5ec?&logo=sqlite&logoColor=013b50&style=flat&logoWidth=30)
 
 ### Ferramentas Utilizadas:
 
-![expo](https://img.shields.io/badge/DJANGO-0b4b33?&logo=django&logoColor=white&style=flat&logoWidth=30) ![vscode](https://img.shields.io/badge/VS%20CODE-0078d7?&logo=visualstudiocode&logoColor=white&style=flat&logoWidth=30) ![sqlite](https://img.shields.io/badge/SQLITE-79c5ec?&logo=sqlite&logoColor=013b50&style=flat&logoWidth=30)
+![expo](https://img.shields.io/badge/DJANGO-0b4b33?&logo=django&logoColor=white&style=flat&logoWidth=30) ![vscode](https://img.shields.io/badge/VS%20CODE-0078d7?&logo=visualstudiocode&logoColor=white&style=flat&logoWidth=30)
 
----
 ## Detalhes:
 Iniciado no dia 18/02/23 e finalizado no dia 27/02/23.
 
