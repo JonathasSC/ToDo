@@ -351,19 +351,8 @@
 	margin-top: 30px;
 }
 
-/* Footer */
-
-footer {
-	background-color: black; 
-	width: 100%; 
-	height: 200px;
-	bottom: 0;
-	position: absolute;
-	top:98%;
-	padding-top: 200px;
-}
-
 .addsearch {
 	width: 100%;
 	height: 20px;
 }
+
